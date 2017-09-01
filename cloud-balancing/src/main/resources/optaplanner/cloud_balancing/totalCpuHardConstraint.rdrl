@@ -6,7 +6,7 @@ rule "totalCpuHardConstraint"
 	dialect "mvel"
 	when
 		$c : Computer( $cpu : cpu)
-		Number( ) from accumulate ( Process( computer == $c , $reqCpu : requiredCpu),
+		Number( intValue() > $cpu ) from accumulate ( Process( computer == $c , $reqCpu : requiredCpu),
 			sum($reqCpu)) 
 	then
 end
