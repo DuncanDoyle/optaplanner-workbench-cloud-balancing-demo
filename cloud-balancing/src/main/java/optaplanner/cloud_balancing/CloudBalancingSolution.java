@@ -12,12 +12,13 @@ public class CloudBalancingSolution implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 
 	private java.util.List<optaplanner.cloud_balancing.Process> processes;
+	@org.optaplanner.core.api.domain.valuerange.ValueRangeProvider(id = "computers")
 	private java.util.List<optaplanner.cloud_balancing.Computer> computers;
 
-	@javax.annotation.Generated(value = {"org.optaplanner.workbench.screens.domaineditor.client.widgets.planner.PlannerDataObjectEditor"})
-	@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(value = org.optaplanner.persistence.jaxb.api.score.buildin.hardsoft.HardSoftScoreJaxbXmlAdapter.class)
-	@org.kie.api.definition.type.Label(value = "Generated Planner score field")
+	@org.kie.api.definition.type.Label("Generated Planner score field")
+	@javax.annotation.Generated({"org.optaplanner.workbench.screens.domaineditor.client.widgets.planner.PlannerDataObjectEditor"})
 	@org.optaplanner.core.api.domain.solution.PlanningScore
+	@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(org.optaplanner.persistence.jaxb.api.score.buildin.hardsoft.HardSoftScoreJaxbXmlAdapter.class)
 	private org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore score;
 
 	public CloudBalancingSolution() {
