@@ -6,12 +6,43 @@ package optaplanner.cloud_balancing;
 
 public class Computer implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Computer() {
-    }
+	private long id;
+	private int cpu;
+	private int cost;
 
+	public Computer() {
+	}
 
+	public long getId() {
+		return this.id;
+	}
 
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public int getCpu() {
+		return this.cpu;
+	}
+
+	public void setCpu(int cpu) {
+		this.cpu = cpu;
+	}
+
+	public int getCost() {
+		return this.cost;
+	}
+
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
+
+	public Computer(long id, int cpu, int cost) {
+		this.id = id;
+		this.cpu = cpu;
+		this.cost = cost;
+	}
 
 }
