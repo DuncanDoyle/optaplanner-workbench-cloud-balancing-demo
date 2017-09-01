@@ -6,12 +6,37 @@ package optaplanner.cloud_balancing;
 
 public class CloudBalancingSolution implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public CloudBalancingSolution() {
-    }
+	private java.util.List<optaplanner.cloud_balancing.Process> processes;
+	private java.util.List<optaplanner.cloud_balancing.Computer> computers;
 
+	public CloudBalancingSolution() {
+	}
 
+	public java.util.List<optaplanner.cloud_balancing.Process> getProcesses() {
+		return this.processes;
+	}
 
+	public void setProcesses(
+			java.util.List<optaplanner.cloud_balancing.Process> processes) {
+		this.processes = processes;
+	}
+
+	public java.util.List<optaplanner.cloud_balancing.Computer> getComputers() {
+		return this.computers;
+	}
+
+	public void setComputers(
+			java.util.List<optaplanner.cloud_balancing.Computer> computers) {
+		this.computers = computers;
+	}
+
+	public CloudBalancingSolution(
+			java.util.List<optaplanner.cloud_balancing.Process> processes,
+			java.util.List<optaplanner.cloud_balancing.Computer> computers) {
+		this.processes = processes;
+		this.computers = computers;
+	}
 
 }
