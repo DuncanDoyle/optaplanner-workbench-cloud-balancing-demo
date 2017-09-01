@@ -11,6 +11,7 @@ public class Process implements java.io.Serializable {
 
 	private long id;
 	private int requiredCpu;
+	@org.optaplanner.core.api.domain.variable.PlanningVariable(valueRangeProviderRefs = {"computers"})
 	private optaplanner.cloud_balancing.Computer computer;
 
 	public Process() {
