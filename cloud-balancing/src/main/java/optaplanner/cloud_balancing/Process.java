@@ -6,12 +6,44 @@ package optaplanner.cloud_balancing;
 
 public class Process implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Process() {
-    }
+	private long id;
+	private int requiredCpu;
+	private optaplanner.cloud_balancing.Computer computer;
 
+	public Process() {
+	}
 
+	public long getId() {
+		return this.id;
+	}
 
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public int getRequiredCpu() {
+		return this.requiredCpu;
+	}
+
+	public void setRequiredCpu(int requiredCpu) {
+		this.requiredCpu = requiredCpu;
+	}
+
+	public optaplanner.cloud_balancing.Computer getComputer() {
+		return this.computer;
+	}
+
+	public void setComputer(optaplanner.cloud_balancing.Computer computer) {
+		this.computer = computer;
+	}
+
+	public Process(long id, int requiredCpu,
+			optaplanner.cloud_balancing.Computer computer) {
+		this.id = id;
+		this.requiredCpu = requiredCpu;
+		this.computer = computer;
+	}
 
 }
