@@ -4,7 +4,7 @@
   <termination xStreamId="4">
     <millisecondsSpentLimit>0</millisecondsSpentLimit>
     <secondsSpentLimit>30</secondsSpentLimit>
-    <minutesSpentLimit>5</minutesSpentLimit>
+    <minutesSpentLimit>0</minutesSpentLimit>
     <hoursSpentLimit>0</hoursSpentLimit>
     <daysSpentLimit>0</daysSpentLimit>
   </termination>
