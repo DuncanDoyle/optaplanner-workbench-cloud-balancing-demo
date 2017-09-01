@@ -1,0 +1,9 @@
+package optaplanner.cloud_balancing;
+
+import java.lang.Number;
+
+rule "totalCpuHardConstraint"
+	dialect "mvel"
+	when
+	then
+end
