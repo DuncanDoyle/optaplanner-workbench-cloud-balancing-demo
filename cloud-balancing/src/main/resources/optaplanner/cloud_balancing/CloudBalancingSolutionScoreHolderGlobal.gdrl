@@ -1,3 +1,0 @@
-package optaplanner.cloud_balancing;
-
-global org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScoreHolder scoreHolder;
